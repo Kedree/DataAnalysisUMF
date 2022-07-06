@@ -1,0 +1,7 @@
+1. Use colnames and rownames functions to show the column and row names. 
+
+2. Use mean and sd functions in R to calculate the average and standard deviation for mpg, and cyl columns. 
+
+3. Use colMeans function on mtcars to see the average values for all columns. 
+
+4. Show the cyl value for Mazda RX4 by using row and column names in your data frame. 
