@@ -8,7 +8,7 @@ The work is seperated by assignment and contains the data used as well as the ac
 - [x] ICA2
 - [x] ICA3
 - [x] ICA4
-- [ ] ICA5
+- [x] ICA5
 - [ ] ICA6
 - [ ] ICA7
 - [ ] ICA8
