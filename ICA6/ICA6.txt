@@ -1,0 +1,13 @@
+ICA6 had these instructions:
+
+#1. Please read the titanic.csv file and assign it to a data frame called df.
+#2. Use the summary function to get a statistical summary of your data frame. Please report for which columns you get meaningful statistical summaries such as mean and median.
+#3. Assign the rows that don't have NA value for the Age column from df to df2. (Hint: is.na( ) )
+#4. Assign those rows which have Survived passenger under the age of 30 to another data fram called younger. (Please try data frame slicing, but know that subset() is another option)
+#5  Assign those rows which have Survived passengers at the age of 30 and above to another data fram called older.
+
+#Additional info for you to study and try later in your own time:
+#library(tidyr)
+#library(dplyr)
+#df %>% drop_na() %>% count(Age>=30 & Survived==1)
+#df %>% drop_na() %>% count(Age<30 & Survived==1)
