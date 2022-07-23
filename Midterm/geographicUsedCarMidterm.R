@@ -18,7 +18,13 @@ choro <- merge(states, carsGroup, sort = FALSE, by = 'region') # Merge the count
 
 choro <- choro[order(choro$order), ] # Order the polygons for correct display
 
+colnames(choro)[7] <- 'Count'
+
 # Map the merged dataset, choro is the merged, geom_polygon fills the color with the number of cars, the rest is mumbo jumbo
 ggplot(choro, aes(long, lat)) +
-  geom_polygon(aes(group = group, fill = n)) +
-  coord_map("albers",  lat0 = 45.5, lat1 = 29.5)
+  geom_polygon(aes(group = group, fill = Count)) +
+  coord_map("albers",  lat0 = 45.5, lat1 = 29.5) +
+  ggtitle("Number of Car Listings By State") +
+  xlab("") + ylab("") +
+  theme(axis.text.x = element_blank(), axis.ticks = element_blank()) +
+  theme(axis.text.y = element_blank(), axis.ticks = element_blank())
