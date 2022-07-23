@@ -14,12 +14,14 @@ df <- df[!(df$title_status=="salvage"),] # Deletes all salvage cars, we ideally 
 
 df[11] <- NULL # Deletes vin because it refuses to be deleted via name above
 
-df <- df[!(df$odometer >= 750000),] # Delete all cars with odometers >= 750000
+df <- df[!(df$year <= 1950),] # Delete all cars with years <= 1950
 
 df <- df[!(df$price <= 200),] # Delete all cars with price at <= 200
 
-df <- df[!(df$year <= 1950),] # Delete all cars with years <= 1950
+df <- df[!(df$price >= 300000),] # Delete all cars with prices >= 300000, most were values like 1234567 or 11111111, only 65 removed
 
 df <- df[!(df$odometer <= 40),] # Delete all cars with odometers <= 40
+
+df <- df[!(df$odometer >= 750000),] # Delete all cars with odometers >= 750000
 
 write.csv(df,"vehiclesClean3.csv", row.names = FALSE) # Save the cleaned data
