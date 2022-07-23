@@ -12,7 +12,8 @@ The work is seperated by assignment and contains the data used as well as the ac
 - [x] ICA6
 - [x] HW1
 - [x] ICA7
-- [ ] HW2
+- [x] HW2
+- [x] HW3
 - [ ] ICA8
 - [ ] Midterm
 - [ ] Final
