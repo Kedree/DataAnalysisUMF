@@ -19,4 +19,7 @@ The work is seperated by assignment and contains the data used as well as the ac
 - [x] ICA10
 - [x] ICA11
 - [x] HW4
+- [ ] HW5
+- [ ] HW6
+- [ ] HW7
 - [ ] Final
