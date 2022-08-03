@@ -1,0 +1,35 @@
+---
+title: "HW6-2DONE"
+author: "Kedree Proffitt"
+date: "2022-08-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Imports
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(tidyverse)
+library(lubridate)
+```
+
+## Importing Data
+
+```{r}
+load(file='house_prices.rda')
+```
+
+## Making the Plot
+
+```{r}
+ggplot(house_prices, aes(date, house_price_index)) +
+geom_line() +
+scale_x_continuous(name = "Date", breaks = c(ymd("1980-01-01"), ymd("2000-01-01"), ymd("2020-01-01")), labels = c("'80", "'00", "'20")) +
+scale_y_continuous(name = "House Price Index") +
+facet_wrap(vars(state), nrow=3, ncol=17)
+```
