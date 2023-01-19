@@ -24,7 +24,7 @@ The work is seperated by assignment and contains the data used as well as the ac
 - [x] HW5
 - [x] HW6
 - [x] HW7
-- [ ] Final
+- [x] Final
 
 
 
